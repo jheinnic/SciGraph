@@ -5,6 +5,7 @@ WORKDIR /scigraph
 
 ADD . /scigraph
 ADD docker/scripts /scigraph/
+ADD docker/owl /scigraph/
 
 # Directory for configuration files
 RUN mkdir -p /scigraph/conf

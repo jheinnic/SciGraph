@@ -32,6 +32,13 @@ consumerThreadCount: 2
 ontologies:
   # Files can be local paths...
   - url: src/test/resources/ontologies/pizza.owl
+  - url: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/1.1.1/bfo.owl
+  - url: /scigraph/owl/SmartProtocols_wf_V4.0.owl
+  - url: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2020-06-10/iao.owl
+  - url: https://raw.githubusercontent.com/obi-ontology/obi/v2020-08-24/obi.owl
+  - url: https://imagesnippets.com/lio/lio.owl
+  - url: http://data.bioontology.org/ontologies/UO/submissions/213/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+  - url: http://data.bioontology.org/ontologies/TEO/submissions/4/download?apikey=8b5b7825-53
     # Or URIs
     #- http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine.rdf
     # And can optionally include a reasoner factory
