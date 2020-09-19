@@ -8,14 +8,12 @@ ADD docker/scripts /scigraph/
 ADD docker/owl /scigraph/
 
 # Directory for configuration files
-RUN mkdir -p /scigraph/conf && \
-    mkdir -p /.m2/repository && \
-    chgrp -R 0 /.m2/repository && \
-    chmod -R 2575 /.m2/repository
-
-# Build scigraph
-RUN cd /scigraph && mvn install -DskipTests -DskipITs
+RUN mkdir -p      /.m2/repository && \
+    mkdir -p      /scigraph/conf && \
+    chgrp -R 0    /.m2 && \
+    chmod -R 2575 /.m2 && \
+    cd /scigraph & mvn install -DskipTests -DskipITs
 
 ENV PATH="/scigraph/scripts/:$PATH"
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/bin/bash"]
