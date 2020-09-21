@@ -25,9 +25,10 @@
 
   <modules>
     <module>SciGraph-core</module>
-    <module>SciGraph-services</module>
     <module>SciGraph-entity</module>
     <module>SciGraph-analysis</module>
+    <module>SciGraph-loader</module>
+    <module>SciGraph-services</module>
   </modules>
 
   <prerequisites>
